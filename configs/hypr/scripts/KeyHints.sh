@@ -69,5 +69,4 @@ GDK_BACKEND=$BACKEND yad \
 " SHIFT G" "Gamemode! All animations OFF or ON" "toggle" \
 " ALT E" "Rofi Emoticons" "Emoticon" \
 " H" "Launch this Quick Cheat Sheet" "" \
-"" "" "" \
-"More tips:" "https://github.com/JaKooLit/Hyprland-Dots/wiki" ""\
+" T" "Terminal Commands Guide" "" \
