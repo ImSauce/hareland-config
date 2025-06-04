@@ -4,4 +4,12 @@ A backup file containing arch linux hyprland rice configurations with hare omaga
 ## Screenshots
 
 ### Dark Mode
-<img src="screenshots/1.png" alt="Home" style="width: 400p; " />
+<img src="screenshots/1.png" alt="Home" style="width: 400p; "/>
+<img src="screenshots/2.png" alt="Home" style="width: 400p; "/>
+<img src="screenshots/3.png" alt="Home" style="width: 400p; "/>
+
+### Light Mode
+<img src="screenshots/4.png" alt="Home" style="width: 400p; "/>
+<img src="screenshots/5.png" alt="Home" style="width: 400p; "/>
+
+
