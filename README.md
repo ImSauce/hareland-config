@@ -1,5 +1,5 @@
 ## Description
-A backup file containing arch linux hyprland rice configurations with hare omagari theme.
+A backup file containing my arch linux hyprland rice configurations with hare omagari theme.
 
 ## Screenshots
 
