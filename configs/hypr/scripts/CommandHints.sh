@@ -318,4 +318,8 @@ GDK_BACKEND=$BACKEND yad \
 "ncdu /" "show a tree of files with their size (package)" \
 "foremost -h" "show a list of commands for recovering files" \
 "foremost -t all or png,jpg,etc" "(-v -q -i /dev/victimfile -o /root/Desktop/outputfile) to recover permanently deleted files." \
-
+"jp2a --width=100 5.jpg --color" "image to ascii art" \
+"sudo cp /home/sauce/Pictures/wallpapers/1.png /boot/grub/" "copy an image to the grub boot loader file" \
+"sudo nano /etc/default/grub" "make sure to uncomment these    GRUB_GFXMODE=1920x1080  and  GRUB_GFXPAYLOAD_LINUX=keep  and  GRUB_BACKGROUND=/boot/grub/1.png" \
+"sudo grub-mkconfig -o /boot/grub/grub.cfg" "edit the background of the grub bootloader" \
+"magick 1.jpg 1.png" "convert jpg to png file" \
