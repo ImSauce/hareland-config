@@ -180,18 +180,20 @@ tooltip label{
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #333333;
+        /* background-color: #db2c2c; */
+        color: #636363;
+        border-radius: 20px;
     }
 }
 
 #battery.critical:not(.charging) {
 	color: #f53c3c;
 	animation-name: blink;
-	animation-duration: 3.0s;
+	animation-duration: 1.0s;
 	animation-timing-function: steps(12);
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+    border-radius: 20px;
 }
 
 label:focus {
@@ -205,11 +207,11 @@ label:focus {
 }
 
 #cpu {
-    color: blue;
+    color: rgb(67, 112, 163);
 }
 
 #memory {
-    color: green;
+    color: rgb(79, 198, 219);
 }
 
 #custom-light_dark,
@@ -236,7 +238,7 @@ label:focus {
 
 #wireplumber,
 #pulseaudio {
-    color: green;
+    color: rgb(168, 168, 168);
 }
 
 #wireplumber.muted,
@@ -253,7 +255,7 @@ label:focus {
 }
 
 #disk {
-    color: brown;
+    color: rgb(151, 84, 153);
 }
 
 #custom-weather {
@@ -265,11 +267,11 @@ label:focus {
 }
 
 #temperature {
-    color: #FF5349;
+    color: #ffd549;
 }
 
 #temperature.critical {
-    background-color: #ff0000;
+    background-color: #e62121;
 }
 
 #tray {
