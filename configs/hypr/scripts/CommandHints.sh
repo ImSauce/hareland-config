@@ -309,7 +309,15 @@ GDK_BACKEND=$BACKEND yad \
 "python3 -m http.server 8080" "Start a simple web server for file transfer Example python3 -m http.server 8080" \
 "" "" \
 "" "" \
+"[Fail2Ban]" "" \
+"sudo systemctl enable/start fail2ban" "enable fail2ban"  \
+"sudo nano /etc/fail2ban/jail.local" "cuztomize and reload using [sudo systemctl restart fail2ban]" \
+"sudo fail2ban-client status sshd" "check whos banned" \
+"sudo fail2ban-client set sshd unbanip {IP}" "unban an IP" \
+"" "" \
+"" "" \
 "[Special]"  "" \
+"curl ifconfig.me" "check my IP address" \
 "nano /etc/systemd/timesyncd.conf" "arch pre install timesync fix to NTP=time.cloudflare.com time.google.com" \
 "systemctl restart systemd-timesyncd" "restart the timesync" \
 "sudo gdisk /dev/sdX" "there are 4 questions, answer it 1 by 1 with these letters(x,z,y,y) to format your disk" \
@@ -323,3 +331,8 @@ GDK_BACKEND=$BACKEND yad \
 "sudo nano /etc/default/grub" "make sure to uncomment these    GRUB_GFXMODE=1920x1080  and  GRUB_GFXPAYLOAD_LINUX=keep  and  GRUB_BACKGROUND=/boot/grub/1.png" \
 "sudo grub-mkconfig -o /boot/grub/grub.cfg" "edit the background of the grub bootloader" \
 "magick 1.jpg 1.png" "convert jpg to png file" \
+"chmod -R 777 {dir}" "example, [chmod -R 777 /home/sauce/Files/github/HazeByte/database]  Give full read/write access to the database folder" \
+"sudo chown -R sauce:sauce {dir}" "example, [sudo chown -R sauce:sauce /home/sauce/Files/github/HazeByte/database] Fixes permission issues that happen when files were cloned/copied by root or another user." \
+"chmod -R u+rwX {dir}" "Safer version only allows YOU the read/write access." \
+"test -w {dir} echo \"✅ Writable\" || echo \"❌ Not writable\"" "Use this to double-check before running your app" \
+"chmod 666 {dir}" "Gives read + write access to everyone (but no execute)" \
