@@ -83,7 +83,8 @@ tooltip label{
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #23b11e;
+    color: #d6d6d6;
 }
 
 #mode {
@@ -165,8 +166,13 @@ tooltip label{
     color: #51b633;
 }
 
+#calendar tooltip {
+    background-color: #000000;
+}
+
+
 #custom-updater {
-    color: #7287fd;
+    color: #414249;
 }
 
 #battery {
@@ -267,11 +273,17 @@ label:focus {
 }
 
 #temperature {
-    color: #ffd549;
+    color: #d6be70;
 }
 
 #temperature.critical {
-    background-color: #e62121;
+    color: #eb791c;
+	animation-name: blink;
+	animation-duration: 0.30s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    border-radius: 20px;
 }
 
 #tray {
