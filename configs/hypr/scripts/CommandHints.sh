@@ -37,8 +37,6 @@ GDK_BACKEND=$BACKEND yad \
 "touch file" "Create an empty file." \
 "sudo command" "Run a command with superuser privileges." \
 "man command" "Show the manual page for a command." \
-"apt update" "Update the list of available packages (Debian/Ubuntu)." \
-"apt upgrade" "Upgrade all upgradable packages." \
 "ping address" "Send network packets to test connectivity." \
 "top" "Display running processes in real-time." \
 "htop" "Interactive process viewer (enhanced 'top')." \
@@ -339,6 +337,30 @@ GDK_BACKEND=$BACKEND yad \
 "asciinema play {dir/filename.cast}" "play back a recording (you can pause using SPACEBAR and copy the text in the recording)" \
 "exit" "stop recording" \
 "agg file.cast file.gif" "convert cast file to gif" \
+"" "" \
+"" "" \
+"[TLP Control]"  "" \
+"sudo systemctl status tlp" "check if TLP is active and enabled" \
+"sudo systemctl start tlp" "start TLP manually" \
+"sudo systemctl stop tlp" "temporarily stop TLP (until reboot)" \
+"sudo systemctl enable tlp" "enable TLP to start on boot" \
+"sudo systemctl disable tlp" "disable TLP from starting on boot" \
+"sudo systemctl disable --now tlp" "disable and stop TLP immediately" \
+"sudo systemctl enable --now tlp" "enable and start TLP immediately" \
+"" "" \
+"" "" \
+"[TLP Battery Thresholds]"  "" \
+"sudo nano /etc/tlp.conf" "open the TLP config file to edit thresholds" \
+"#START_CHARGE_THRESH_BAT0=60" "comment out this line to remove start threshold" \
+"#STOP_CHARGE_THRESH_BAT0=80" "comment out this line to remove stop threshold" \
+"sudo tlp start" "apply changes after editing the config" \
+"sudo tlp-stat -s" "check TLP status and if thresholds are active, check battery wear and cycles" \
+"" "" \
+"" "" \
+"[lm_sensors]"  "" \
+"sudo pacman -S lm_sensors" "install sensors tool to monitor temperatures" \
+"sudo sensors-detect" "scan and detect available temperature sensors [just press ENTER to accept defaults]" \
+"watch sensors" "live monitor temperatures [updates every 2 seconds, press Ctrl+C to stop]" \
 "" "" \
 "" "" \
 "[Special]"  "" \

@@ -208,9 +208,33 @@
     	"title<.*zapzap.*>": " ",
 		"title<.*messenger.*>": " ",
 		"title<.*facebook.*>": " ",
+		"title<.*Discord.*>": " ",
 		"title<.*reddit.*>": " ",
+		//"title<.*ImSauce.*>": " ",
+		"title<.*github.*>": " ",
+		"title<.*GitHub.*>": " ",
+	  	"title<.*sauce 🍵 (@imsauce_) / X.*>": " ",
+		"title<.*(1) sauce 🍵 (@imsauce_) / X.*>": " ",
+		"title<.*Home / X.*>": " ",
+		"title<.*(1) Home / X.*>": " ",
+		//"title<.*x.*>": " ",
+		"title<.*Instagram.*>": " ",
+		"title<.*Pinterest.*>": " ",
+		"title<.*ArchWiki.*>": "󰣇 ",
+		 "title<.*Drive.*>": " ",
+		 "title<.*Google Docs.*>": "󰧮 ",
+		// "title<.*.*>": " ",
+		// "title<.*.*>": " ",
+		// "title<.*.*>": " ",
+		// "title<.*.*>": " ",
+		// "title<.*.*>": " ",
+		// "title<.*.*>": " ",
+		// "title<.*.*>": " ",
+		// "title<.*.*>": " ",
+		// "title<.*.*>": " ",
 
-	  	
+
+
 		"title<.*ChatGPT.*>": "󰚩 ",
 		"title<.*deepseek.*>": "󰚩 ",
 		"title<.*qwen.*>": "󰚩 ",
@@ -235,7 +259,6 @@
 		"class<code|VSCode|code-url-handler|code-oss|codium|codium-url-handler|VSCodium>": "󰨞 ",
     	"class<dev.zed.Zed>": "󰵁",
 		"class<codeblocks>": "󰅩 ",
-		"title<.*github.*>": " ",
 		"class<mousepad>": " ",
 		"class<libreoffice-writer>": " ",
 		"class<libreoffice-startcenter>": "󰏆 ",
@@ -272,6 +295,7 @@
 		"class<org.gnome.SystemMonitor>": "󱒃 ",
 		"class<yad>": " ",
 		"class<org.gnome.Loupe>": " ",
+		"class<Audacity>": " ",
 		"class<>": " "
 		}
 	}

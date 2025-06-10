@@ -293,7 +293,7 @@ label:focus {
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+	color: #c9c9c9;
 }
 
 #mpd {
