@@ -342,6 +342,7 @@ GDK_BACKEND=$BACKEND yad \
 "[TLP Control]"  "" \
 "sudo systemctl status tlp" "check if TLP is active and enabled" \
 "sudo systemctl start tlp" "start TLP manually" \
+"sudo systemctl restart tlp" "restart TLP manually" \
 "sudo systemctl stop tlp" "temporarily stop TLP (until reboot)" \
 "sudo systemctl enable tlp" "enable TLP to start on boot" \
 "sudo systemctl disable tlp" "disable TLP from starting on boot" \
@@ -361,6 +362,26 @@ GDK_BACKEND=$BACKEND yad \
 "sudo pacman -S lm_sensors" "install sensors tool to monitor temperatures" \
 "sudo sensors-detect" "scan and detect available temperature sensors [just press ENTER to accept defaults]" \
 "watch sensors" "live monitor temperatures [updates every 2 seconds, press Ctrl+C to stop]" \
+"" "" \
+"" "" \
+"[Ollama AI]"  "" \
+"ollama run {model}}" "Run a model like phi or mistral; downloads it if not installed" \
+"ollama stop {model}" "Run the Mistral model; use it in your terminal" \
+"ollama list" "List all locally available models" \
+"ollama pull {model}" "Download a model (e.g. llama3) without running it" \
+"ollama create mymodel -f Modelfile" "Create a custom model using a Modelfile" \
+"ollama show {model}" "Display details about the ai model" \
+"ollama rm {model}" "Remove the ai model from local storage" \
+"ollama serve" "Start the Ollama server (in foreground; usually not needed if systemd is used)" \
+"sudo systemctl status ollama" "Check if Ollama server is running via systemd" \
+"sudo systemctl enable --now ollama" "Enable and start Ollama on boot using systemd" \
+"sudo systemctl restart ollama" "Restart the Ollama server service" \
+"sudo systemctl stop ollama" "Stop the Ollama service" \
+"sudo systemctl disable ollama" "Disable auto-start on boot" \
+"sudo systemctl daemon-reexec" "Use if systemd is acting weird after updates" \
+"sudo journalctl -u ollama -f" "View Ollama logs live in the terminal" \
+"ollama help" "Show general help for Ollama commands" \
+"ollama run phi --modelfile ./Modelfile" "Run using a local model config file (custom fine-tuned one)" \
 "" "" \
 "" "" \
 "[Special]"  "" \
@@ -394,4 +415,7 @@ GDK_BACKEND=$BACKEND yad \
 "systemd-analyze blame" "check what process makes ur startup so slow on boot" \
 "errno [number]" "shows what the error number mean" \
 "unp" "winrar or something that unpacks an archived file" \
+"sudo systemctl enable --now {app}" "make the application or script run on boot startup" \
+
+
 
