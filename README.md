@@ -12,3 +12,5 @@ A backup file containing my arch linux hyprland rice configurations with Hare Om
 <img src="screenshots/6.png" alt="Home" style="width: 400p; "/>
 
 
+
+
